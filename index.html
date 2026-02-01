@@ -18,7 +18,7 @@
     user-select: none;
     position: relative;
     /* Background image from your saved file in the same folder */
-    background-image: url('valentines bg.jpg');
+    background-image: url('NIVS.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,8 +157,8 @@
     <span class="heart"></span><span class="heart"></span><span class="heart"></span>
   </div>
   <p style="margin: 20px 0; font-size: 20px;">Will you go out with me for Valentine's Day?</p>
-  <button id="yes-btn">YES</button>
-  <button id="no-btn">NO</button>
+  <button id="yesss-btn">YES</button>
+  <button id="nooo-btn">NO</button>
   <div>
     <span class="heart"></span><span class="heart"></span><span class="heart"></span>
   </div>
@@ -169,8 +169,8 @@
      Yay! 💖<br /><br />
      Date: February 14, 2026<br />
      Time: 7:00 PM<br />
-     Venue:  <br /><br />
-     -love ❤️
+     Venue:ur house  <br /><br />
+     -love mili ❤️
   </p>
   <div>
     <span class="heart"></span><span class="heart"></span><span class="heart"></span>
@@ -273,6 +273,27 @@
     startConfettiRain();
   });
 </script>
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.innerHTML = "❤️";
+  heart.style.position = "fixed";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.top = "-10px";
+  heart.style.fontSize = "20px";
+  heart.style.opacity = "0.8";
+  heart.style.animation = "fall 4s linear";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 4000);
+}, 400);
+
+</script>
+
+<style>
+@keyframes fall {
+  to { transform: translateY(110vh); opacity: 0; }
+}
+</style>
 </body>
 </html>
 
